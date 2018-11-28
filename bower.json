@@ -1,0 +1,22 @@
+{
+	"name": "opensans",
+	"description": "",
+	"main": "dist/css/open-sans.css",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/nice-studio/OpenSans",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"src/pug",
+		"Gruntfile.js",
+		"**/*.html",
+		"**/*.ico",
+		"**/*.json"
+	]
+}

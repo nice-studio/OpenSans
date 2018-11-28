@@ -1,0 +1,20 @@
+.font(@local; @oslocal; @style; @weight; @filename) {
+	font-family: '@{fontfamily}';
+	font-style: @style;
+	font-weight: @weight;
+	src: local(@local),
+		local(@oslocal),
+		url("@{fontpath}/@{filename}.eot") format("embedded-opentype"),
+		url("@{fontpath}/@{filename}.otf") format("opentype"),
+		url("@{fontpath}/@{filename}.svg") format("svg"),
+		url("@{fontpath}/@{filename}.ttf") format("truetype"),
+		url("@{fontpath}/@{filename}.woff") format("woff"),
+		url("@{fontpath}/@{filename}.woff2") format("woff2");
+}
+.mixweight(@weight; @style) when (@weight =< 900){
+	.@{style}-@{weight} {
+		font-weight: @weight;
+		font-style: @style;
+	}
+	.mixweight((@weight + 100); @style);
+}
