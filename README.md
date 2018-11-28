@@ -1,1 +1,1 @@
-# OpenSans
+# Font Family: Open Sans
