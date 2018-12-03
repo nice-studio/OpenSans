@@ -18,5 +18,8 @@
 		"**/*.html",
 		"**/*.ico",
 		"**/*.json"
-	]
+	],
+	"devDependencies": {
+		"fontname": "https://github.com/nice-studio/sceleton-webfont.git"
+	}
 }
